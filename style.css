@@ -10,3 +10,15 @@ body {
     color: #222;
     line-height: 1.6;
 }
+.carousel {
+    box-shadow:  2px 4px 16px #222;
+}
+
+section.servicios {
+    min-height: 500px;
+    
+}
+h3.green {
+    text-shadow: 1px 2px 4px rgba(56, 136, 56, 0.603);
+}
+
