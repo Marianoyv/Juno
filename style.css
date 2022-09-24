@@ -27,19 +27,70 @@ h5{}
 
 
 /* Nav bar */
+.navbar {
+    
+    background-color: black;
+    
+}
+.navbar a {
+    font-size: 18px;
+    margin-left: 7px;
+    color: yellow;
+    
+}
+.navbar a:hover {
+    border-bottom: 1px solid yellow;
+    color: red;
+    border-radius: -6px;
+    transition: all 1.5s;
+}
+.dropdown-menu.show {
+    background-color: black;
+}
 
 /* Header */
-
-.carousel {
-    box-shadow:  2px 4px 16px #222;
+.header img {
+    max-height: 750px;
+    margin: auto;
+    top: 0;
+   
 }
-.carousel-item-active {
+.carousel-caption {
+    top: 150px;
+    padding: 30px;
+}
+
+.carousel-caption h2 {
+    font-size: 300%;
+    font-weight: 700;
+    background-color: yellow;
+    color: black;
+    box-shadow: 2px 4px 16px black;
+    padding: 25px;
+
+}
+
+.carousel-caption h3 {
+    margin: 20px;
+    margin-bottom: 20px;
+    font-size: 200%;
+    font-weight: 500;
+    text-shadow: 1px 2px 4px black;
+}
+.carousel-item .overlay {
+    background-color: rgba(0, 0, 0, 0.534);
+    width: 100%;
+    height: 100%;
     position: absolute;
-
+    top: 0;
+    left: 0;
 }
-.text {
-    align-self: center;
-    background: rgba(34, 34, 34, 0.103);
+.header .btn {
+    font-size: 24px;
+    margin: 20px;
+    padding: 10px;
+    background-color: rgb(0, 0, 0);
+    box-shadow: 2px 4px 16px black;
 }
 
 /* Servicios */
@@ -62,12 +113,11 @@ h3.green {
     margin-top: 25px;
 }
 .footer .container-fluid {    
-    background-color: #222;
+    background-color: rgb(0, 0, 0);
     color: aliceblue;
     box-shadow: 2px 4px 16px #222
 }
 .footer .row {
-    height: 300px;
     padding: 20px;
     margin: 10px;
 }
@@ -76,25 +126,29 @@ h3.green {
     text-decoration: none;
     color: aliceblue;
     display: block;
-    margin: 10px;
+    margin: 10px auto;
     padding: 5px;
     font-size: 22px;
     
 }
 .footer i {
     font-size: 22px;
-    margin: 7px;
+    margin-right: 7px;
 }
+
+iframe {
+    border-radius: 6px;
+}
+
+
 
 
 
 th, td {
-    color: aliceblue;
-}
-iframe {
-    box-shadow: 2px 4px 16px aliceblue;
+    color: #fff;
 }
 
+/**
 @media screen and (min-with:760px) {
   
-}
+}*/
