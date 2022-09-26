@@ -95,9 +95,25 @@ h5{}
 
 /* Servicios */
 
-h3.green {
-    text-shadow: 1px 2px 4px rgba(56, 136, 56, 0.603);
+.servicios .container {
+    margin: 20px auto;
+    padding: 20px;
 }
+
+.servicios .card {
+    justify-content: center;
+    padding: 20px;
+    height: 260px;
+    border-radius: 6px;
+    box-shadow: 2px 4px 16px rgb(29, 29, 29);
+}
+
+.servicios i {
+
+    margin: 10px;
+    font-size: 25px;
+}
+
 
 /* Nosotros */
 .nosotros img {
@@ -108,14 +124,29 @@ h3.green {
 }
 /* Contacto */
 
-/* Footer */
-.footer {
-    margin-top: 25px;
+section.contacto {
+    background-color: #222;
+    color: #fff;
+    margin: auto;
 }
+.contacto h2 {
+    margin: 20px;
+    padding: 20px;
+}
+.contacto .card {
+    color: #222;
+    margin: 30px auto;
+    padding: 20px;
+    box-shadow: 2px 4px 16px rgb(0, 0, 0);
+}
+
+/* Footer */
+
 .footer .container-fluid {    
     background-color: rgb(0, 0, 0);
     color: aliceblue;
-    box-shadow: 2px 4px 16px #222
+    box-shadow: 2px 4px 16px #222;
+    padding: 20px;
 }
 .footer .row {
     padding: 20px;
@@ -148,7 +179,6 @@ th, td {
     color: #fff;
 }
 
-/**
 @media screen and (min-with:760px) {
   
-}*/
+}
