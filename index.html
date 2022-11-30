@@ -12,7 +12,7 @@
     <script src="https://kit.fontawesome.com/70dc13288a.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    
+  <div id="app"></div>
 
 <!-- Nav bar-->
 
@@ -61,79 +61,78 @@
 
 <!-- Header -->
 <section class="header">
-  <div class="space"></div>
-  <div class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-    </div>
-    
-    <div class="carousel-inner">
-      
-      <div class="carousel-item active">
-        <div class="overlay"></div>
-        <img src="/img/placa.jpg" alt="...">
-        <div class="carousel-caption">
-        <h2>Compramos metales No-Ferrosos</h2>
-        <h3>Al mejor precio</h3>
-        <button type="button" class="btn btn-outline-warning">Sobre nosotros</button>
-      </div>
-      </div>
 
-      <div class="carousel-item">
-        <div class="overlay"></div>
-        <img src="/img/cobre.jpg" alt="...">
-        <div class="carousel-caption">
-        <h2>Pida una cotizacion</h2>
-        <a href="#contacto">
-        <button type="button" class="btn btn-outline-warning">Contacto</button>
-        </a>
-      </div>
-      </div>
+  <video autoplay loop muted>
+    <source src="/img/Bgbg.mp4" type="video/mp4">
+  </video>
 
-      <div class="carousel-item">
-        <div class="overlay"></div>
-        <img src="/img/bronze.jpg" alt="...">
-        <div class="carousel-caption">
-        <h2>Reconozca la clase del metal</h2>
-        <button type="button" class="btn btn-outline-warning">Lista de Metales</button>
-      </div>
-      </div>
-    </div>
-    
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
+  <div class="space">
+    <div class="text">
+      <h1>Juno Metales</h1>
+      <h2>Compra de Metales en Buenos Aires</h2>
+    <h3 class="tsecond">
+    </h3>
   </div>
+</div>
+
+<script>
+    const text = document.querySelector(".tsecond");
+
+    const textLoad = () => {
+        setTimeout(() => {
+            text.textContent = "Compro Cobre";
+        }, 0);
+        setTimeout(() => {
+            text.textContent = "Compro Bronce";
+        }, 3000);
+        setTimeout(() => {
+            text.textContent = "Compro Plomo";
+        }, 6000);
+        setTimeout(() => {
+            text.textContent = "Compro Aluminio";
+        }, 9000);
+        setTimeout(() => {
+            text.textContent = "Compro Perfil";
+        }, 12000);
+        setTimeout(() => {
+            text.textContent = "Compro Acero";
+        }, 15000);
+        setTimeout(() => {
+            text.textContent = "Compro Carter";
+        }, 18000);
+        setTimeout(() => {
+            text.textContent = "Compro Radiadores";
+        }, 21000);
+        setTimeout(() => {
+            text.textContent = "Compro Cables";
+        }, 24000); //1s = 1000 milliseconds
+    }
+    textLoad();
+    setInterval(textLoad, 12000);
+</script>
   </section>
   <!-- Servicios -->
 
 <section id="servicios" class="servicios">
-  <h2 class="text-center m-4 p-3">SERVICIOS</h2>
-  <div class="container text-center">
+  <h2 class="text-center">SERVICIOS</h2>
+  <div class="container text-center p-2">
     <div class="row">
         <div class="col-md m-2 p-2">
           <div class="card">
-          <h3><i class="fa-sharp fa-solid fa-shop"></i>Compramos Metales No-Ferrosos</h3>
-            <p>Cotizamos el valor de su metal en base al tipo de metal y su peso</p>
+          <h3><i class="fa-sharp fa-solid fa-shop"></i>Compramos metales a personas y empresas</h3>
+            <p>Dedicamos nuestro tiempo exclusivamente a brindar atencion a nuestros clientes de todos los sectores, ofrecemos ayuda en la compra de sus metales, cotizamos el precio por el valor y el peso de su metal</p>
         </div>
       </div>
         <div class="col-md m-2 p-2">
           <div class="card">
-          <h3><i class="fa-solid fa-truck"></i>Buscamos a domicilio</h3>
-            <p>Pesamos, valuamos y pagamos en efectivo directamente en su domicilio</p>
+          <h3><i class="fa-solid fa-truck"></i>Retiramos Metales a Domicilio</h3>
+            <p>Reserva una cita a traves de Whatsapp para que busquemos los metales que quieras vender y te pagamos en el acto y en efectivo</p>
         </div>
       </div>
         <div class="col-md m-2 p-2">
           <div class="card">
           <h3><i class="fa-solid fa-hand-holding-dollar"></i>Cotizamos En-Linea</h3>
-            <p>Identificamos la clase de metal y cotizamos aproximadamente el valor atraves de Whatsapp</p>
+            <p>Consulta nuestros precios a traves de nuestras lineas de contacto, envianos la informacion que tegas sobre los metales que deseas vender y te diremos el valor estimado de tus metales</p>
         </div>
       </div>
     </div>
@@ -163,7 +162,7 @@
 
 <section class="nosotros" id="nosotros">
   <div class="container text-center">
-<h2 class="p-3 m-3">Sobre nosotros</h2>
+<h2>Sobre nosotros</h2>
 <div class="row">
   <div class="col">
   <img src="img/logo.png" class="rounded" alt="juno">
@@ -260,6 +259,7 @@
   
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+<script src="main.js"></script>
 
 </body>
 </html>
