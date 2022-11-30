@@ -55,6 +55,7 @@ a {
     background: linear-gradient(90deg, rgba(0,0,0,0.9) 0%, rgba(0, 0, 0, 0.5) 75%, rgba(255,255,255,0) 100%);
     color: #fff;
     font-weight: 700;
+
 }
 .header video {
     top: 0;
@@ -63,15 +64,16 @@ a {
     background-size: cover;
     min-width: 100%;
     min-height: 100vh;
-    z-index: -1;
+    z-index: -10;
 }
 
 .text {
-    position: static;
+    position: relative;
     height: auto;
     width: max-content;
     padding: 20px;
     margin: 30px;
+    background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(0, 0, 0, 0.5) 75%, rgba(0,0,0,0.9) 100%);
 }
 .text h1 {
     font-size: 4.5em;
@@ -92,9 +94,11 @@ a {
 
 /* Servicios */
 .servicios {
+    box-shadow: 4px 8px 16px #111;
     padding: 50px;
     position: relative;
-    background-color: rgba(255, 255, 255, 0.95);
+    background-color: rgb(255, 255, 255);
+    z-index: 1;
 }
 .servicios h2 {
     font-size: 2.5em;
@@ -122,7 +126,7 @@ a {
 
 .servicios .card i {
     position: absolute;
-    top: 15px;
+    top: 5px;
     left: 5px;
     color: rgba(34, 34, 34, 0.5);
     font-size: 3em;
@@ -161,8 +165,8 @@ a {
 }
 /* Contacto */
 
-section.contacto {
-    background-color: #222;
+.contacto {
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(34,34,34,1) 100%);
     color: #fff;
     margin: auto;
 }
@@ -170,9 +174,28 @@ section.contacto {
     margin: 20px;
     padding: 20px;
 }
+.contacto .col-sm .row  {
+    text-align: center;
+    justify-content: center;
+}
+.contacto .col-sm .row a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    padding: 20px;
+    font-size: 2em;
+    width: max-content;
+    transition: 0.7s ease-in-out;
+}
+.contacto .col-sm .row a:hover {
+    color: rgb(171, 183, 238);
+    transform: translateY(-10px);
+    transition: 0.7s ease-in-out;
+}
 .contacto .card {
+    border-radius: 17px;
     color: #222;
-    margin: 30px auto;
+    margin: 45px auto;
     padding: 20px;
     box-shadow: 2px 4px 16px rgb(0, 0, 0);
 }
@@ -199,15 +222,18 @@ section.contacto {
 
 /* Footer */
 
-.footer .container-fluid {    
+.footer {    
+    position: relative;
     background-color: rgb(0, 0, 0);
     color: aliceblue;
     box-shadow: 2px 4px 16px #222;
     padding: 20px;
 }
+
 .footer .row {
     padding: 20px;
     margin: 10px;
+    
 }
 
 .footer a {
