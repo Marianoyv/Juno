@@ -30,6 +30,17 @@ a {
     color: rgb(255, 255, 255);
     text-shadow: 1px 2px 4px yellow;
 }
+#w, #p {
+    font-size: 1.5em;
+    padding: 5px;
+    text-shadow: none;
+    color: #ffffff;
+    
+}
+#w {
+    text-shadow: 0px 0px 15px #00ff80;
+}
+
 .navbar a:hover {
     text-shadow: 4px 4px 4px red;
     color: rgb(255, 255, 255);
@@ -109,23 +120,33 @@ a {
     align-items: center;
 }
 .servicios .card {
-    overflow: hidden;
+    
     justify-content: space-around;
     padding: 20px;
-    border-radius: 17px;
+    border-radius: 0 17px 17px 17px;
     border: none;
     box-shadow: 2px 2px 10px rgba(29, 29, 29, 0.5);
 }
 .servicios .card i {
     position: absolute;
-    top: 5px;
-    left: 5px;
-    color: rgba(34, 34, 34, 0.5);
-    font-size: 3em;
+    background-color: rgb(53, 53, 53);
+    top: -15px;
+    left: -15px;
+    color: rgb(255, 255, 0);
+    font-size: 2em;
+    padding: 10px;
+    border-radius: 6px 6px 0 6px;
+    border: none;
+    transition: all 0.7s;
+}
+.servicios .card:hover i {
+    border-radius: 6px 6px 6px 6px;
+    transform: translateY(-15px);
+    transition: all 0.7s;
 }
 .servicios .card h3 {
-    text-align: end;
-    padding: 0 10px 10px 25px;
+
+    padding: 15px;
 }
 .sercivios .card p {
     padding: 20px;
@@ -182,6 +203,11 @@ a {
     height: 70px;
     border-radius: 100px;
     margin: 20px;
+}
+#CC {
+    width: 70px;
+    height: 130px;
+    margin: auto 20px;
 }
 
 /* Contacto */
