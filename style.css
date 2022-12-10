@@ -1,44 +1,30 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;    
 }
-html {
-    scroll-behavior: smooth;
-}
-
-body {
-    font-family: 'Roboto', sans-serif;
-    line-height: 1.6;
-    
-}
-a {
-    text-decoration: none;
-    color: aliceblue;
-}
-
+html {scroll-behavior: smooth;}
+body {line-height: 1.6;}
+a {text-decoration: none;
+    color: aliceblue;}
 /* Navbar */
-
 .navbar {
-    position: relative;
     background-color: rgb(0, 0, 0);
     border-radius: 0 0 6px 6px;
-    max-width: 100%;
 }
 .navbar a {
     position: relative;
     z-index: 1;
     font-size: 1.1em;
     font-weight: 600;
-    margin: 0 10px;
+    margin: auto 10px;
     color: rgb(255, 255, 255);
-    transition: all 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
 }
 .navbar a:hover {
     color: #5e400a;
-  }
-  .navbar a:after {
+}
+.navbar a:after {
     display: block;
     position: absolute;
     top: 0;
@@ -55,34 +41,27 @@ a {
     opacity: 0;
     z-index: -1;
     transition: all 0.5s ease-in-out;
-  }
- .navbar a:hover:after {
+}
+.navbar a:hover:after {
     opacity: 1;
     visibility: visible;
     height: 100%;
     transition: all 0.5s ease-in-out;
-  }
+}
 #w, #p {
     font-size: 1.5em;
-    padding: 10px 15px;
 }
-
 .dropdown-menu.show {
     background-color: black;
 }
-
 /* Header */
-
 .header {
     position: relative;
-    top: 0;
-    right: 0;
     max-width: 100%;
     height: 100vh;
     display:  flex;
-    justify-content: left;
+    justify-content: center;
     align-items: center;
-    background: linear-gradient(90deg, rgba(0,0,0,0.9) 0%, rgba(0, 0, 0, 0.5) 75%, rgba(255,255,255,0) 100%);
     color: #fff;
     font-weight: 700;
 }
@@ -93,6 +72,7 @@ a {
     min-width: 100%;
     min-height: 100vh;
     z-index: -1;
+    filter: blur(4px);
 }
 .header img {
     display: none;
@@ -102,8 +82,11 @@ a {
     position: relative;
     height: auto;
     width: 100%;
+    margin: auto;
     padding: 20px;
-    background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(0, 0, 0, 0.5) 75%, rgba(0,0,0,0.9) 100%);
+    text-align: center;
+    background-color: rgba(17, 17, 17, 0.8);
+    border-radius: 14px;
 }
 .text h1 {
     font-size: 4.5em;
@@ -119,9 +102,7 @@ a {
     font-size: 2.5em;
     padding: 5px 0;
 }
-
 /* Servicios */
-
 .servicios {
     width: 100%;
     box-shadow: 4px 8px 16px #111;
@@ -137,13 +118,11 @@ a {
 }
 .servicios .container {
     margin: 20px auto;
-
 }
 .servicios .row {
     align-items: center;
 }
-.servicios .card {
-    
+.servicios .card { 
     justify-content: space-around;
     padding: 20px;
     border-radius: 0 17px 17px 17px;
@@ -168,15 +147,12 @@ a {
     transition: all 0.7s;
 }
 .servicios .card h3 {
-
     padding: 15px;
 }
 .sercivios .card p {
     padding: 20px;
 }
-
 /* Nosotros */
-
 .nosotros {
     background-color: #fff;
 }
@@ -197,12 +173,9 @@ a {
     margin: 35px auto;
     padding: 10px;
 }
-
 /* Metales */
-
 .metales {
     background-color: #fff;
-
 }
 .metales h2 {
     padding: 40px;
@@ -218,7 +191,6 @@ a {
     width: 150px;
     height: 150px;
 }
-
 .metales .circle img {
     background-position: center;
     background-size: cover;
@@ -232,7 +204,6 @@ a {
     height: 130px;
     margin: auto 20px;
 }
-
 /* Contacto */
 
 .contacto {
@@ -258,7 +229,7 @@ a {
     transition: 0.7s ease-in-out;
 }
 .contacto .col-sm .row a:hover {
-    color: rgb(171, 183, 238);
+    color: rgb(26, 198, 26);
     transform: translateY(-10px);
     transition: 0.7s ease-in-out;
 }
@@ -321,7 +292,7 @@ th, td {
     color: #fff;
 }
 .copy a {
-    font-size: 12px;
+    font-size: 22px;
 }
 
 
