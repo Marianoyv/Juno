@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
 * {
     box-sizing: border-box;
     padding: 0;
@@ -89,8 +90,10 @@ a {text-decoration: none;
     border-radius: 14px;
 }
 .text h1 {
+    text-transform: uppercase;
+    font-family: 'Russo One', sans-serif;
     font-size: 4.5em;
-    font-weight: 700;
+    font-weight: 500;
     padding: 20px 0;
 }
 .text h2 {
@@ -167,11 +170,13 @@ a {text-decoration: none;
 }
 .nosotros img {
     margin: auto;
+    width: auto;
+    height: auto;
 }        
 .nosotros p {
     color: #111;
-    margin: 35px auto;
-    padding: 10px;
+    margin: auto;
+    padding: 20px;
 }
 /* Metales */
 .metales {
