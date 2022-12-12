@@ -21,17 +21,15 @@ a {
 /* Navbar */
 
 .navbar {
-    position: relative;
     background-color: rgb(0, 0, 0);
     border-radius: 0 0 6px 6px;
-    max-width: 100%;
 }
 .navbar a {
     position: relative;
-    z-index: 1;
+
     font-size: 1.1em;
     font-weight: 600;
-    margin: 0 10px;
+    margin: 10px;
     color: rgb(255, 255, 255);
     transition: all 0.5s ease-in-out;
 }
@@ -64,7 +62,7 @@ a {
   }
 #w, #p {
     font-size: 1.5em;
-    padding: 10px 15px;
+ 
 }
 
 .dropdown-menu.show {
